@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+< <html lang="ru">
+    <head>
+        <meta charset = 'utf-8'>
+        <meta name = 'author' content = 'Stas Zub'>
+        <meta name = 'description' content = 'Test page'>
+        <meta name = 'keywords' content = 'HTML, Test, Page'>
+
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <from action="" method="post"> <!-- в форм обязатєльно укащиваютса такі атрибути як action  і method -->
+          <label for="user_name">Напиши своє iмя</label>
+          <input type="text" placeholder="Тутсь напиши" 
+          value="Стри мене щоб почати" maxlength="10"
+          name="user_name" id="user_name"><br><br>
+
+          <input type="file"><br><br>
+
+          <input type="password"><br><br>
+
+          <input type="email"><br><br>
+
+          <label for="user_url">Введи url</label>
+          <input type="url" id="user_url"><br><br>
+
+          <input type="color"><br><br>
+
+          <input type="datetime"><br><br>
+
+          <input type="checkbox"><br><br>
+
+          <label>boy</label>
+          <input type="radio" name="state">
+          <label>girl</label>
+          <input type="radio" name="state"><br><br>
+
+          <input type="time"><br><br>
+
+          <!-- <input type="button"> -->
+           <input type="submit" value="Відправити">
+           <input type="reset" value="Видалити">
+        </from>
+    </body>
+</html>
+
+<!-- hidden - скриває кусок кода який написаний з цим атрибутом але тілки в відображеному форматі на сайті -->
+ <!-- disabled - не дає використовувати посикову строку -->
+  <!-- readonly - дозволяє сканувати написаний текст але не більше -->
+   <!-- тег <input> - це одинарний тег, який створює поле для вводу тексту -->
+<!-- атрибут id - можна помісті де завгодно, в ньому не можна прописувати один і той самий id -->
+<!-- for - позволяє при натискані на текст з тегу <label> переносити пользователя на поле вводу --> 
+<!-- color - 50/50 - не всюди можна використовувати -->
+<!-- все це записуеться в тег <from> -->
+    <!-- атрибут action - за допомогою нього буде проходити переадресація через поле вводу на іншу сторіку,
+      як що не ввести цей атрибут в тег <form> то вся робота буде проходити на первій сторінці  -->
+     <!-- атрибут method - передача даних post, get -->
